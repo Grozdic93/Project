@@ -18,6 +18,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { HeroGalleryComponent } from './hero-gallery/hero-gallery.component';
 import { SliderComponent } from './slider/slider.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
