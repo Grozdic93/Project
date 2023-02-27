@@ -14,6 +14,8 @@ import { LandScapesDetailsComponent } from './land-scapes-details/land-scapes-de
 import { StreetFoodDetailsComponent } from './street-food-details/street-food-details.component';
 import { ArchitecturalDetailsComponent } from './architectural-details/architectural-details.component';
 import { PeopleDetailsComponent } from './people-details/people-details.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { HeroGalleryComponent } from './hero-gallery/hero-gallery.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { PeopleDetailsComponent } from './people-details/people-details.componen
     LandScapesDetailsComponent,
     StreetFoodDetailsComponent,
     ArchitecturalDetailsComponent,
-    PeopleDetailsComponent
+    PeopleDetailsComponent,
+    GalleryComponent,
+    HeroGalleryComponent
   ],
   imports: [
     BrowserModule,
