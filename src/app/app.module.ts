@@ -17,6 +17,8 @@ import { PeopleDetailsComponent } from './people-details/people-details.componen
 import { GalleryComponent } from './gallery/gallery.component';
 import { HeroGalleryComponent } from './hero-gallery/hero-gallery.component';
 import { SliderComponent } from './slider/slider.component';
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+
 
 
 @NgModule({
@@ -42,7 +44,7 @@ import { SliderComponent } from './slider/slider.component';
     BrowserModule,
    LightgalleryModule,
     AppRoutingModule,
-    
+    SweetAlert2Module.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
