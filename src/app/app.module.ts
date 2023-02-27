@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { LightgalleryModule } from 'lightgallery/angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
@@ -20,6 +20,7 @@ import { HeroGalleryComponent } from './hero-gallery/hero-gallery.component';
 @NgModule({
   declarations: [
     AppComponent,
+    
     FooterComponent,
     NavbarComponent,
     HeroSectionComponent,
@@ -36,7 +37,9 @@ import { HeroGalleryComponent } from './hero-gallery/hero-gallery.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+   LightgalleryModule,
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
