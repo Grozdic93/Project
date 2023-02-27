@@ -16,6 +16,7 @@ import { ArchitecturalDetailsComponent } from './architectural-details/architect
 import { PeopleDetailsComponent } from './people-details/people-details.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HeroGalleryComponent } from './hero-gallery/hero-gallery.component';
+import { SliderComponent } from './slider/slider.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { HeroGalleryComponent } from './hero-gallery/hero-gallery.component';
     ArchitecturalDetailsComponent,
     PeopleDetailsComponent,
     GalleryComponent,
-    HeroGalleryComponent
+    HeroGalleryComponent,
+    SliderComponent
   ],
   imports: [
     BrowserModule,
