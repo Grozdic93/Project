@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { HeroSectionComponent } from './hero-section/hero-section.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { CitiesDetailsComponent } from './cities-details/cities-details.component';
@@ -27,7 +26,7 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
     
     FooterComponent,
     NavbarComponent,
-    HeroSectionComponent,
+
     HomePageComponent,
     AboutPageComponent,
     CitiesDetailsComponent,
