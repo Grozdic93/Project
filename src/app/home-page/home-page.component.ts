@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { prints} from '../prints';
+import { Iprint } from '../Iprint';
 
 @Component({
   selector: 'app-home-page',
@@ -7,4 +9,8 @@ import { Component } from '@angular/core';
 })
 export class HomePageComponent {
 
+prints: Array<Iprint> = prints;
+available: boolean = true;
+print: Iprint = {} as Iprint;
+id: number = 0;
 }
