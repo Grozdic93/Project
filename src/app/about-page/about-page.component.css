@@ -13,7 +13,7 @@
     font-size: 50px;
     
 }
-h3{
+h5{
   display: flex;
   color: white;
   width: 80%;
@@ -21,6 +21,9 @@ h3{
 }
 #img1{
   width: 100%;
+}
+img2{
+  width: 80%;
 }
 
 
