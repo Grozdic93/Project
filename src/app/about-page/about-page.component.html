@@ -5,11 +5,11 @@
          <table>
             <tr class="d-flex flex-column flex-md-row ">
                 <td class="mx-5">
-                    <img id="img1" class="animate__animated animate__lightSpeedInLeft" src="https://cdn.pixabay.com/photo/2015/01/06/16/14/woman-590490_1280.jpg" alt="">
+                    <img id="img1" class="animate__animated " src="https://cdn.pixabay.com/photo/2015/01/06/16/14/woman-590490_1280.jpg" alt="">
                 </td>
                 <div>
                 <td>
-                    <h5 class="animate__animated animate__lightSpeedInRight">
+                    <h5 class="animate__animated ">
                       I love capturing the emotions of human connections with my pictures. This also includes authentic friendship pictures, which I think have a very special value. <br>
                       And when do you get all your best friends together in one day?
                       Exactly: on your bachelorette party.<br>
@@ -56,7 +56,7 @@
                     <textarea type="text-area" class="app-form-control" placeholder="Message"></textarea>
                   </div>
                   <div class="app-form-group buttons p-4">
-                    <button class="app-form-button" (click)="confirmAction()">SEND</button>
+                    <button class="app-form-button" [swal]="sent!", ‘we will get in touch as soon as possible’, ‘success’]”>SEND</button>
                   </div>
                 </div>
               </div>
