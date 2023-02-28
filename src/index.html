@@ -84,22 +84,26 @@
           }, { duration: 1200, fill: "forwards" });
         }
       }
-      /* -- Had to add extra lines for touch events -- */
-      track.onmousedown = e => handleOnDown(e);
-      track.ontouchstart = e => handleOnDown(e.touches[0]);
-      track.onmouseup = e => handleOnUp(e);
-      track.ontouchend = e => handleOnUp(e.touches[0]);
-      track.onmousemove = e => handleOnMove(e);
-      track.ontouchmove = e => handleOnMove(e.touches[0]);
+      let myHome = document.querySelector('.home');
+      if (myHome.classList.contains('active')) {
+        track.onmousedown = e => handleOnDown(e);
+        track.ontouchstart = e => handleOnDown(e.touches[0]);
+        track.onmouseup = e => handleOnUp(e);
+        track.ontouchend = e => handleOnUp(e.touches[0]);
+        track.onmousemove = e => handleOnMove(e);
+        track.ontouchmove = e => handleOnMove(e.touches[0]);
+        track.addEventListener("wheel", function (e) {
+          imgs = document.getElementsByClassName("image");
+          for (let i = 0; i < imgs.length; i++) {
+            imgs[i].classList.remove("mystyle");
+            imgs[i].style.transform = "scale(1)";
+            imgs[i].style.zIndex = "0";
+          }
+        })
+      }
 
-      track.addEventListener("wheel", function (e) {
-        imgs = document.getElementsByClassName("image");
-        for (let i = 0; i < imgs.length; i++) {
-          imgs[i].classList.remove("mystyle");
-          imgs[i].style.transform = "scale(1)";
-          imgs[i].style.zIndex = "0";
-        }
-      })
+
+
 
 
     }, 1000)
