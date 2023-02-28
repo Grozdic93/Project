@@ -1,6 +1,6 @@
 
 footer {
-	height: 200px;
+	height: 100px;
 	background: url('https://imgur.com/gc1HjiF');
 	position: relative;
 }
@@ -21,12 +21,12 @@ footer ul li a {
 	text-decoration: none;
 	font-size: 25px;
 	width: 50px;
-	height: 50px;
+	height: 10px;
 	line-height: 50px;
 	background: #333;
 	color: #FFF;
 	text-align: center;
-	margin: 0 15px;
+	margin: 0 45px;
 	display: block;
 	border-radius: 50%;
 	position: relative;
@@ -41,3 +41,14 @@ footer p {
 	text-align: center;
 	display: block;
 }
+.text-white{
+	height: 200px;
+	background-attachment: fixed;
+    background-position-y: cover;
+    background-size: cover;
+    padding: 0;
+    margin: auto;
+	
+}
+
+
