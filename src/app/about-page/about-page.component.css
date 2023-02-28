@@ -1,0 +1,116 @@
+.top{
+    margin: 0px;
+}
+#head{
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    
+}
+
+
+/* contact for start ------------------------------------------------------------------------------------------- */
+.background {
+    margin: 0px;
+    display: flex;
+    min-height: 70vh;
+    /* https://cssgradient.io/ */
+    /* background-image: url("https://cdn.pixabay.com/photo/2019/11/09/14/28/camera-4613669_1280.jpg");
+    background-size: cover; */
+    
+
+  }
+  .container {
+    flex: 0 1 800px;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .screen {
+    position: relative;
+    background: #2a2a2a;
+    border-radius: 10px;
+  }    
+
+  .screen-body {
+    display: flex;
+  }
+  
+  .screen-body-item {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .screen-body-item.left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app-title {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: #ea1d6f;
+    font-size: 26px;
+    font-family: 'EB Garamond', serif;
+  }
+  
+  .app-title:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 50px;
+    height: 2px;
+    background: #ea1d6f;
+  }
+  
+  .app-contact {
+    margin-top: auto;
+    font-size: 8px;
+    color: #888;
+  }
+  
+  .app-form-group {
+    margin-bottom: 15px;
+    font-family: 'Libre Baskerville', serif;
+  } 
+  .app-form-group.buttons {
+    margin-bottom: 0;
+    text-align: right;
+  }
+  
+  .app-form-control {
+    width: 100%;
+    padding: 10px 0;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #666;
+    color: #ddd;
+    font-size: 14px;
+    outline: none;
+    transition: border-color .2s;
+  }
+  
+  .app-form-control::placeholder {
+    color: #868383;
+  }
+  
+  .app-form-control:focus {
+    border-bottom-color: #c20303;
+  }
+  
+  .app-form-button  {  /*unter line */
+    background: none;
+    border: none;
+    color: #ea1d6f;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .app-form-button:hover {
+    color: #b9134f;
+  }
+  
+ 
