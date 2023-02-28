@@ -4,7 +4,7 @@
     gap: 4vmin;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 53%;
     transform: translate(0%, -50%); 
     user-select: none; /* -- Prevent image highlighting -- */
  

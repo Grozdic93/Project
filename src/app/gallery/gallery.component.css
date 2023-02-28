@@ -10,12 +10,13 @@
 }
 
 .cardDiv {
+    background-color: black;
     cursor: pointer;
     border-radius: 10px;
 }
 
 .cardDiv img {
-    transition: all linear 0.25s;
+
     object-fit: cover;
 }
 
