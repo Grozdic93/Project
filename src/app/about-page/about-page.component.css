@@ -1,11 +1,28 @@
+.top *, .top, .background{
+  background-color: black;
+}
 .top{
     margin: 0px;
+    padding-top: 100px;
+    
 }
 #head{
     font-family: 'EB Garamond', serif;
     text-align: center;
+    color: white;
+    font-size: 50px;
     
 }
+h3{
+  display: flex;
+  color: white;
+  width: 80%;
+  text-align: center;
+}
+#img1{
+  width: 100%;
+}
+
 
 
 /* contact for start ------------------------------------------------------------------------------------------- */
@@ -22,7 +39,7 @@
   .container {
     flex: 0 1 800px;
     margin: auto;
-    padding: 10px;
+    
   }
   
   .screen {
