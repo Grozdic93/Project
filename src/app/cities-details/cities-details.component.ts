@@ -17,4 +17,5 @@ export class CitiesDetailsComponent {
     const { index, prevIndex } = detail;
     console.log(index, prevIndex);
   };
+  
 }
