@@ -12,10 +12,11 @@
 }
 
 .bar {
-    height: 50vh;
+    height: 40vh;
     background-color: whitesmoke;
     align-items: center;
     padding-top: 2rem;
+    /* padding-bottom: 0.5rem; */
 }
 
 .bar h2 {
@@ -29,7 +30,6 @@
     font-family: 'Libre Baskerville', serif;
     text-align: center;
     font-size: 1.7rem;
-    padding-bottom: 0.5rem;
 }
 
 .bar p {
