@@ -9,6 +9,9 @@ import { LandScapesDetailsComponent } from './land-scapes-details/land-scapes-de
 import { WildLifeDetailsComponent } from './wild-life-details/wild-life-details.component';
 import { PeopleDetailsComponent } from './people-details/people-details.component';
 import { StreetFoodDetailsComponent } from './street-food-details/street-food-details.component';
+import { CartComponent } from './cart/cart.component';
+
+
 const routes: Routes = [
   {path:"", component: HomePageComponent
 },{
@@ -27,6 +30,10 @@ const routes: Routes = [
     path:"gallery/people-details", component: PeopleDetailsComponent
   },{
     path:"gallery/streetfood-details", component: StreetFoodDetailsComponent
+  },{
+    path:'cart', component: CartComponent
+  },{
+    path:'**', redirectTo: ''
   }];
 
 
