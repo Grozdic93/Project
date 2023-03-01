@@ -1,54 +1,69 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+
 footer {
-	height: 100px;
-	background: url('https://imgur.com/gc1HjiF');
+	height: 250px;
+	width: 100%;
+	background: radial-gradient(#272727, #1b1b1b);
 	position: relative;
+	
 }
 
-footer ul {
-	display: flex;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
 
-footer ul li {
-	list-style-type: none;
-}
+
 
 footer ul li a {
 	text-decoration: none;
 	font-size: 25px;
 	width: 50px;
 	height: 10px;
-	line-height: 50px;
-	background: #333;
 	color: #FFF;
 	text-align: center;
-	margin: 0 45px;
 	display: block;
 	border-radius: 50%;
-	position: relative;
-	overflow: hidden;
+
+
 }
-footer ul li a:hover {
-	transition: .5s;
-	color: #333;
-	background: #FFF;
-}
-footer p {
-	text-align: center;
-	display: block;
-}
-.text-white{
-	height: 200px;
-	background-attachment: fixed;
-    background-position-y: cover;
-    background-size: cover;
-    padding: 0;
-    margin: auto;
+
+
+  .wrapper {
 	
-}
-
-
+	display: grid;
+	grid-template-areas: 'overlap';
+	place-content: center;
+	text-transform: uppercase;
+	height: 100%;
+  }
+  .wrapper > div {
+	position: absolute;
+	bottom:20px;
+	left: 10px;
+	background-clip: text;  
+	-webkit-background-clip: text;
+	color: #363833;
+	font-family:  'Rampart One', cursive;
+	font-weight: 900;
+	font-size: clamp( 3em, 10vw, 10rem);
+	grid-area: overlap;
+	letter-spacing: 1px;
+	-webkit-text-stroke: 4px transparent;
+  }
+  div.bg {
+	background-image: repeating-linear-gradient( 105deg, 
+	#ffb338 0%, 
+	#3e2904 5%,
+	 #ffb338 12%);
+	color: transparent;
+	filter: drop-shadow(5px 15px 15px black);
+	transform: scaleY(1.04);
+	transform-origin: top;
+  }
+  div.fg{
+	background-image: repeating-linear-gradient( 5deg,  
+	#ffb338 0% , 
+	#77571d 23%, 
+	  #ffb338 31%);
+	color: #1e2127;
+	transform: scale(1);
+  }
+	
