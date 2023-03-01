@@ -1,0 +1,67 @@
+<!-- <app-hero-cart></app-hero-cart> -->
+<div class="box">
+
+    <div class="container w-60 pt-3 mb-5">
+        <div class="header" *ngIf="cart.length!=0">
+            <h1 class="cart-title">Cart
+            </h1>
+            <hr>
+        </div>
+        <div class="row row-cols-xl-2 row-cols-lg-2 row-cols-md-1 row-cols-sm-1" *ngFor="let val of cart; let i = index">
+
+            <div class="img-fluid" style="width:20%">
+                <img class="img-thumbnail" src=" {{val.image}} " alt="{{val.name}} "></div>
+            <div class="text-sm-start text-wrap mt-4 ">
+                <h4 class="text-uppercase fw-bold ">{{val.name}}</h4>
+                <p class="lh-base ">{{val.description}}</p>
+                <p class="lh-base "><b>Amount: </b>{{val.qtty}}</p>
+                <p class="lh-base "><b>Price:</b> {{val.price}} Euro</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end ">
+                    <button class="btn btn-outline-danger btn-sm me-md-2" (click)="removeItem(id)">Remove</button></div>
+            </div>
+            <br>
+        </div>
+        <div class="button" *ngIf="cart.length!=0">
+            <hr>
+            <button class="btn btn-danger " (click)="clearCart()">Empty Cart</button>
+        </div>
+
+    </div>
+    <div class="summary pt-3 mb-5" *ngIf="cart.length!=0">
+        <h1>Summary</h1>
+        <p class="total fs-5">No. of items: {{cart.length}}</p>
+        <h4 class="total"><b>Total: </b>{{total.toFixed(2)}} Euro</h4>
+        <h5 class="total">Service Charge (10%): {{(total * 0.1).toFixed(2)}} Euro</h5>
+        <h5 class="total" *ngIf="total> 40"><b>Discount (15%) </b> on orders above 40 Euro: {{(total * 0.15).toFixed(2)}} Euro</h5>
+        <h4 class="total"><b>Total Amount </b> (including service charge{{total > 40 ? " and discount" : ""}}): {{(total + (total * 0.1) - (total > 40 ? total * 0.15 : 0)).toFixed(2)}} Euro</h4>
+
+    </div>
+
+    <div class="order" *ngIf="cart.length!=0">
+        <h1>Order Form</h1>
+        <h5 class="total"> Please fill up your info for the delivery</h5>
+        <br>
+
+
+        <!-- <div class="orderForm">
+            <form [formGroup]="myForm" (ngSubmit)="printingValueInConsole()">
+                <label for="firstName">First Name: </label><br>
+                <input id="firstName" type="text" formControlName="firstName">
+                <br>
+                <label for="lastName">Last Name: </label><br>
+                <input id="lastName" type="text" formControlName="lastName">
+                <br>
+                <label for="dateOfBirth">Birthday: </label><br>
+                <input id="dateOfBirth" type="date" formControlName="dateOfBirth">
+                <br>
+                <label for="address">Address: </label><br>
+                <input id="address" type="text" formControlName="address">
+                <br>
+                <label for="email">Email: </label><br>
+                <input id="email" type="text" formControlName="email">
+                <br>
+                <input type="submit" class="btn btn-dark" value="Submit">
+            </form>
+        </div> -->
+    </div>
+</div>

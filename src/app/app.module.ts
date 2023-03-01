@@ -17,6 +17,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { HeroGalleryComponent } from './hero-gallery/hero-gallery.component';
 import { SliderComponent } from './slider/slider.component';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+import { CartComponent } from './cart/cart.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -37,13 +39,15 @@ import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
     PeopleDetailsComponent,
     GalleryComponent,
     HeroGalleryComponent,
-    SliderComponent
+    SliderComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
    LightgalleryModule,
     AppRoutingModule,
-    SweetAlert2Module.forRoot()
+    SweetAlert2Module.forRoot(),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

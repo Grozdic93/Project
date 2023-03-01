@@ -1,15 +1,5 @@
 export const prints = [
-    // {
-    //     name: "Floating colors",
-    //     description: "Food market in Bangkok",
-    //     price: 350,
-    //     image: "https://images.unsplash.com/photo-1506781961370-37a89d6b3095?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
-    //     size: "70 x 40 cm",
-    //     qtty: 1,
-    //     available: true,
-       
-
-    // },
+   
 
     {   name: "Pink Perfection",
         description: "Flamingo, the Salar de Atacama",
@@ -62,24 +52,14 @@ export const prints = [
 },
 
 {
-        name: "Voucher 50 Є",
+        name: "Voucher 100 Є",
         // description: "50 Euros voucher for the purchase of a print",
-        price: 50,
+        price: 100,
         image: "https://images.unsplash.com/photo-1526614180703-827d23e7c8f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dm91Y2hlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
       
         qtty: 1,
         available: true,
       
 },
-// {
-//     name: "Voucher 100",
-//     // description: "100 Euros voucher for the purchase of a print",
-//     price: 100,
-//     image: "https://images.unsplash.com/photo-1526614180703-827d23e7c8f2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8dm91Y2hlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-  
-//     qtty: 1,
-//     available: true,
-  
-// }
 
 ];
