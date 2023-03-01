@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { prints} from '../prints';
 import { Iprint } from '../Iprint';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home-page',
@@ -13,4 +14,13 @@ prints: Array<Iprint> = prints;
 available: boolean = true;
 print: Iprint = {} as Iprint;
 id: number = 0;
+
+constructor(private route: ActivatedRoute,
+  private router: Router) { }
+
+toBottom(){window.scrollTo(0,2400)
 }
+
+}
+
+

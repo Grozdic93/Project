@@ -10,13 +10,13 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 })
 export class CartComponent implements OnInit {
 
-  // myForm = new FormGroup({ 
-  //   firstName: new FormControl('',Validators.required), 
-  //   lastName: new FormControl('', Validators.required),
-  //   dateOfBirth: new FormControl('', Validators.required),
-  //   address: new FormControl('', [Validators.required, Validators.minLength(5)]),
-  //   email: new FormControl('', [Validators.required, Validators.email]),
-  // });
+  myForm = new FormGroup({ 
+    firstName: new FormControl('',Validators.required), 
+    lastName: new FormControl('', Validators.required),
+    dateOfBirth: new FormControl('', Validators.required),
+    address: new FormControl('', [Validators.required, Validators.minLength(5)]),
+    email: new FormControl('', [Validators.required, Validators.email]),
+  });
 
   cart: Array<Iprint> = [];
 total: number = 0;
@@ -43,10 +43,10 @@ clearCart() {
   }
 
   //method to print values of the input after the button is clicked
-// printingValueInConsole(){
-//   if(this.myForm.valid){
-//     console.log(this.myForm.value); 
-//   }
-// }
+printingValueInConsole(){
+  if(this.myForm.valid){
+    console.log(this.myForm.value); 
+  }
+}
 
 }
