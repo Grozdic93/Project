@@ -12,48 +12,50 @@
       <div>
         <td>
           <h5 class="animate__animated animate__slideInRight">
-
             <p>
               <span id="Bio">
                 <li>Biography</li>
               </span>
               <br>
-              travel & documentary photographer
-              <br>
-              BORN 1989 IN ITALY, I'M A PASSIONATE EXPLORER AND ADVENTURER AT HEART,
-              WITH A STRONG ATTRACTION FOR REMOTE PLACES, CULTURES, AND LIFESTYLES.<br> the United States in 1939, she
-              had also lived in Italy and Switzerland. Her first photographs to be published in Life in April 1940 were
-              of tortoises at the Bronx Zoo, taken with her Rolleiflex camera. While she never became a staff
-              photographer at Life, she contributed as a contract<br> photographer until the magazine closed in 1972.[5]
-              Leen was a prolific photographer of fashion for Life, and was long married to the fashion photographer
-              Serge Balkin.[1] She was recognised<br> with inclusion by Edward Steichen of two of her photographs in The
-              Family of Man international <br>touring exhibition; one a photograph of a child at a blackboard, the
-              other, several generations of an Ozark farming family (later selected by Carl Sagan for the 12 inch
-              Voyager golden <br>records).
-              <br>
-              Over the years, Leen was behind over 50 magazine covers and contributed countless reports from around the
-              world, including the story of her dog Lucky which<br> began in 1949 and later led to a book. In addition
-              to her many animal stories, she is remembered for covering young people <br> in the 1940s and 1950s and
-              the group of artists known as The Irascibles.<br> She also documented European royalty, fashion models,
-              dance, and actresses. From 1973, Leen<br> avidly continued to publish her work in book form, including her
-              notable images of bats which she called her flying kittens.
+              Nina Lee is a talented photographer born in Italy in 1989, to a Japanese father and an Italian  mother.<br> Growing up with a multicultural background, Nina  has always been fascinated by the diversity of people and cultures around the world. This passion led her to pursue a career in photography, which has allowed her to capture and share <br> the beauty of the world through her lens.
+              Nina's style of photography is characterized by her ability to capture <br> raw emotion and unique perspectives. She has a keen eye for detail and a talent for finding<br>  beauty in unexpected places.<br>Nina's portfolio includes a wide range of subjects, from breathtaking landscapes to intimate portraits, each one capturing a moment in time and telling a unique story.<br> 
+              Nina's work has been recognized and <br> praised by many, and she has had the opportunity to showcase her art in various exhibitions and galleries around the world. She continues<br>  to push the boundaries of her craft, always striving to <br>  capture the essence of the human experience through her photography.
             </p>
-
-
           </h5>
         </td>
       </div>
     </tr>
     <div>
-      <h2 id="h21">this picture was made 1995</h2>
     </div>
-    <tr>
+    <!-- <tr>
       <td class="d-flex justify-content-center">
         <img id="img2" class="animate__animated animate__lightSpeedInLeft"
-          src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F42f27fd8-5510-11e8-9795-08ef69e784e8.jpg?crop=2118%2C1191%2C0%2C110&resize=1500"
+          src="https://images.unsplash.com/photo-1560329072-17f59dcd30a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80"
           alt="">
       </td>
+    </tr> -->
+  </table>
+  <table>
+    <tr class="d-flex flex-column flex-md-row">
+
+      <div>
+        <td>
+          <h5 class="animate__animated animate__slideInRight" style="margin-left: 30px;">
+          <p>
+              Nina Lee is a talented photographer born in Italy in 1989, to a Japanese father and an Italian  mother.<br> Growing up with a multicultural background, Nina  has always been fascinated by the diversity of people and cultures around the world. This passion led her to pursue a career in photography, which has allowed her to capture and share <br> the beauty of the world through her lens.
+              Nina's style of photography is characterized by her ability to capture <br> raw emotion and unique perspectives. She has a keen eye for detail and a talent for finding<br>  beauty in unexpected places.<br>Nina's portfolio includes a wide range of subjects, from breathtaking landscapes to intimate portraits, each one capturing a moment in time and telling a unique story.<br> 
+              Nina's work has been recognized and <br> praised by many, and she has had the opportunity to showcase her art in various exhibitions and galleries around the world. She continues<br>  to push the boundaries of her craft, always striving to <br>  capture the essence of the human experience through her photography.
+            </p>
+          </h5>
+        </td>
+      </div>
+      <td>
+        <img class="animate__animated animate__slideInLeft" style="margin-right: 30px;"
+          src="https://images.unsplash.com/photo-1560329072-17f59dcd30a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=841&q=80" alt="">
+      </td>
     </tr>
+    <div>
+    </div>
   </table>
 </div>
 
@@ -61,10 +63,14 @@
   <hr>
 </div>
 <div style="color:rgb(237, 229, 229); background-color: black; padding: 0px;">
-  <hr>
 </div>
 <!-- contact Form start -->
 <!-- ------------------------------------------------------------------------------------------------ -->
+
+<h4 class="text-center px-5" style="background-color: black; margin: 0px; color: aliceblue; font-family: 'Libre Baskerville', serif; font-size: 11px;">Nina's style of photography is characterized by her ability to capture <br> raw emotion and unique perspectives. She has a keen eye for detail and a talent for finding<br>  beauty in unexpected places.<br>Nina's portfolio includes a wide range of subjects, from breathtaking landscapes to intimate portraits, each one capturing a moment in time and telling a unique story.<br> 
+  Nina's work has been recognized and <br> praised by many, and she has had the opportunity to showcase her art in various exhibitions and galleries around the world. She continues<br>  to push the boundaries of her craft, always striving to <br>  capture the essence of the human experience through her photography.</h4>
+
+<h1 class="text-center"></h1>
 <div class="background" id="AnchorId">
   <div class="container">
     <div class="screen">
@@ -76,27 +82,30 @@
           </div>
         </div>
         <div class="screen-body-item">
-          <div class="app-form">
-            <div class="app-form-group">
-              <input class="app-form-control" placeholder="Name" value="">
+          <form class="app-form" [formGroup]="info">
+            <div class="app-form-group" >
+              <input class="app-form-control" placeholder="Name" formControlName="name">
             </div>
             <div class="app-form-group">
-              <input class="app-form-control" placeholder="Email">
+              <input class="app-form-control" placeholder="Email" formControlName="email">
             </div>
             <div class="app-form-group">
-              <input class="app-form-control" placeholder="Phone number">
+              <input class="app-form-control" placeholder="Phone number" formControlName="phone">
             </div>
             <div>
             </div>
             <div>
-              <textarea type="text-area" class="app-form-control" placeholder="Message"></textarea>
+              <textarea type="text-area" class="app-form-control" placeholder="Message" formControlName="message"></textarea>
             </div>
             <div class="app-form-group buttons p-4">
-              <button class="app-form-button"
-                [swal]="['sent!', 'we will get in touch as soon as possible', 'success']">SEND</button>
+              <button [class.disabled]="!info.valid" [swal]="['grat!', 'we will get in toucH!', 'success']"
+              class="app-form-button btn" type="submit">SEND</button>
             </div>
-          </div>
+
+          </form>
+
         </div>
       </div>
     </div>
   </div>
+</div>
