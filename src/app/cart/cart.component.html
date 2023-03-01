@@ -10,7 +10,7 @@
         <div class="row row-cols-xl-2 row-cols-lg-2 row-cols-md-1 row-cols-sm-1" *ngFor="let val of cart; let i = index">
 
             <div class="img-fluid" style="width:20%">
-                <img class="img-thumbnail" src=" {{val.image}} " alt="{{val.name}} "></div>
+                <img class="img-thumbnail" src="{{ val.image }}" alt="{{val.name}} "></div>
             <div class="text-sm-start text-wrap mt-4 ">
                 <h4 class="text-uppercase fw-bold ">{{val.name}}</h4>
                 <p class="lh-base ">{{val.description}}</p>
@@ -60,7 +60,7 @@
                 <label for="email">Email: </label><br>
                 <input id="email" type="text" formControlName="email">
                 <br>
-                <input type="submit" class="btn btn-dark" value="Submit">
+                <input [class.disabled]="!myForm.valid" [swal]="['', 'data submitted', 'success']" type="submit" class="btn btn-dark" value="Submit">
             </form>
         </div>
     </div>

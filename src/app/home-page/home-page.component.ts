@@ -3,6 +3,7 @@ import { prints} from '../prints';
 import { Iprint } from '../Iprint';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
+import { CartService } from '../cart.service';
 
 @Component({
   selector: 'app-home-page',
@@ -21,13 +22,18 @@ ngOnInit(){
 }
 
 constructor(private route: ActivatedRoute,
-  private router: Router, private scroller: ViewportScroller) { }
+  private router: Router, private scroller: ViewportScroller, private CS: CartService) {
+
+   }
 
 toBottom(){
   // window.scrollTo(0,2200)
   this.scroller.scrollToAnchor("prints");
 }
 
+addToCart(dish:Iprint){
+
+  this.CS.addToCart(dish);
 }
 
-
+}

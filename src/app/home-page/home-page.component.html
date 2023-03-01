@@ -58,33 +58,33 @@
                                 <ng-template [ngIf]="val.available" [ngIfElse]="unavailable">
                                     <!-- <button class="btn btn-light me-md-2 btn-sm" type="button" style="background-color:white" routerLink="/dishes/{{i}}">Details</button> -->
                                     <ng-template [ngIf]="available" [ngIfElse]="unavailable">
-                                        <button class="btn btn-light btn-sm" type="button" style="background-color:white" (click)="addToCart(val)">Order</button>
+                                        <button [swal]="['','Item added to cart', 'success']" class=" btn btn-light btn-sm " type="button " style="background-color:white " (click)="addToCart(val) ">Order</button>
                                     </ng-template>
                                 </ng-template>
                             </div>
 
                             <ng-template #unavailable>
-                                <p class="message fw-bold" id="message">Not available</p>
+                                <p class="message fw-bold " id="message ">Not available</p>
                             </ng-template>
                         </div>
                     </div>
                 </div>
-                <div class="d-flex flex-column justify-content-bottom">
-                    <ng-template [ngIf]="val.size" [ngIfElse]="space">
-                        <div class="info">Size: {{val.size}}</div>
+                <div class="d-flex flex-column justify-content-bottom ">
+                    <ng-template [ngIf]="val.size " [ngIfElse]="space ">
+                        <div class="info ">Size: {{val.size}}</div>
                     </ng-template>
                     <ng-template #space>
-                        <div class="info">
-                            <span style="color:whitesmoke">&nbsp;</span>
+                        <div class="info ">
+                            <span style="color:whitesmoke ">&nbsp;</span>
                         </div>
                     </ng-template>
-                    <div class="info">Price: {{val.price}} Є</div>
+                    <div class="info ">Price: {{val.price}} Є</div>
                 </div>
             </div>
         </div>
 
     </div>
 
-    <div class="parallax2">
+    <div class="parallax2 ">
 
     </div>
