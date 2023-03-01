@@ -75,6 +75,13 @@
     bottom: 0;
     left: 50%;
     color: white;
+    cursor: pointer;
+}
+
+.test {
+    height: 100%;
+    object-fit: cover !important;
+    object-position: center !important;
 }
 
 .bar-2 {
