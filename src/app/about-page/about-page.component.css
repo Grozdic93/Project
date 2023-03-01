@@ -1,39 +1,43 @@
 .top *, .top, .background{
   background-color: black;
 }
+input.ng-invalid.ng-touched{
+  border: 1px solid red
+}
+input.ng-valid.ng-touched{
+  border: 1px solid rgb(64, 165, 36)
+}
 .top{
     margin: 0px;
     padding-top: 100px;
     
 }
 #head{
- 
+    padding-bottom: 5rem;
     text-align: center;
     color: white;
     font-size: 50px;
     
 }
+#text1{
+  font-size: 1.5rem;
+  width: auto;
+}
 #Bio{
-  font-size: 20px;
+  font-size: 4rem;
   font-family: 'EB Garamond', serif;
 }
 h5{
   display: flex;
   color: white;
-  width: 80%;
+  margin-right: 6rem;
   font-size: 12px;
   font-family: 'Libre Baskerville', serif; 
 }
 #img1{
   width: 100%;
 }
-#img2{
-  align-items: center;
-  width: 70%;
-  height: 500px;
-  border-radius: 10px;
-  box-shadow: 0 0 80px 20px rgb(74, 72, 72);
-}
+
 #h21{
     color: white;
     z-index: 1;
@@ -52,11 +56,6 @@ h1{
     margin: 0px;
     display: flex;
     min-height: 70vh;
-    /* https://cssgradient.io/ */
-    /* background-image: url("https://cdn.pixabay.com/photo/2019/11/09/14/28/camera-4613669_1280.jpg");
-    background-size: cover; */
-    
-
   }
   .container {
     flex: 0 1 800px;
@@ -139,7 +138,7 @@ h1{
     border-bottom-color: #c20303;
   }
   
-  .app-form-button  {  /*unter line */
+  .app-form-button  { 
     background: none;
     border: none;
     color: #ea1d6f;
