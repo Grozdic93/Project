@@ -1,7 +1,7 @@
 <nav>
   <a class="home" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
         true}">Home</a>
-  <a routerLink="about" routerLinkActive="active">About</a>
+  <a (click)="toTop()" routerLink="about" routerLinkActive="active">About</a>
   <a routerLink="gallery" routerLinkActive="active">Gallery</a>
   <a routerLink="/">Details</a>
   <a (click)="bottomPage()">Hire Me</a>

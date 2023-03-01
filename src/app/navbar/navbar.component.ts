@@ -18,4 +18,9 @@ export class NavbarComponent {
 
   }
 
+
+  toTop(){
+    window.scrollTo(0,document.body.scrollTop);
+  }
+
 }
