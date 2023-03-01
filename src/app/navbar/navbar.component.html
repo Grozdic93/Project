@@ -1,12 +1,12 @@
 <nav class="primaryNav">
   <ul class="flex outerList">
-    <li>
-      <a class="home navLink" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-          true}">Home</a>
+    <li routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+      true}">
+      <a (click)="toTop()" class="home navLink">Home</a>
     </li>
-    <li><a class="navLink" (click)="toTop()" routerLink="about" routerLinkActive="active">About</a></li>
-    <li>
-      <a class="gallery navLink" routerLink="gallery" routerLinkActive="active">Gallery</a>
+    <li routerLink="about" routerLinkActive="active"><a class="navLink" (click)="toTop()">About</a></li>
+    <li routerLink="gallery" routerLinkActive="active">
+      <a (click)="toTop()" class="gallery navLink">Gallery</a>
       <ul class="dropdown" id="dropdown1">
         <li><a routerLink="/gallery/cities-details">Cities</a></li>
         <li><a routerLink="/gallery/architectural-details" href="#">Architectur</a></li>
@@ -17,7 +17,7 @@
       </ul>
 
     </li>
-    <li><a class="navLink" routerLink="/cart">Cart</a></li>
+    <li routerLink="/cart" routerLinkActive="active"><a (click)="toTop()" class="navLink">Cart</a></li>
     <li><a class="navLink" (click)="bottomPage()">Hire Me</a>
 
     </li>

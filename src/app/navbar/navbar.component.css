@@ -27,6 +27,7 @@
   }
   .primaryNav li{
     position: relative;
+   
   }
 
   .primaryNav .animation {
@@ -65,11 +66,11 @@
   }
   .primaryNav .start-gallery, li:nth-child(3).active~.animation {
     width: 100px;
-    left: 210px;
+    left: 200px;
     background-color: #3498db;
   }
   .primaryNav .start-details, li:nth-child(4).active~.animation {
-    width: 160px;
+    width: 100px;
     left: 310px;
     background-color: #9b59b6;
   }
