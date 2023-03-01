@@ -13,10 +13,10 @@ const routes: Routes = [
   {path:"", component: HomePageComponent
 },{
     path:"about", component: AboutPageComponent
+  },{ path:"gallery/cities-details", component: CitiesDetailsComponent
+    
   },{
-    path:"gallery", component: GalleryComponent
-  },{
-    path:"gallery/cities-details", component: CitiesDetailsComponent
+   path:"gallery", component: GalleryComponent
   },{
     path:"gallery/architectural-details", component: ArchitecturalDetailsComponent
   },{

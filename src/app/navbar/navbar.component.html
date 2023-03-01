@@ -1,9 +1,26 @@
-<nav>
-  <a class="home" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
-        true}">Home</a>
-  <a (click)="toTop()" routerLink="about" routerLinkActive="active">About</a>
-  <a routerLink="gallery" routerLinkActive="active">Gallery</a>
-  <a routerLink="/">Details</a>
-  <a (click)="bottomPage()">Hire Me</a>
-  <div class="animation start-home"></div>
+<nav class="primaryNav">
+  <ul class="flex outerList">
+    <li>
+      <a class="home navLink" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+          true}">Home</a>
+    </li>
+    <li><a class="navLink" (click)="toTop()" routerLink="about" routerLinkActive="active">About</a></li>
+    <li>
+      <a class="gallery navLink" routerLink="gallery" routerLinkActive="active">Gallery</a>
+      <ul class="dropdown" id="dropdown1">
+        <li><a routerLink="/gallery/cities-details">Cities</a></li>
+        <li><a routerLink="/gallery/architectural-details" href="#">Architectur</a></li>
+        <li><a routerLink="/gallery/landscapes-details" href="#">Landscapes</a></li>
+        <li><a routerLink="/gallery/wildelife-details" href="#">Wild life</a></li>
+        <li><a routerLink="/gallery/people-details" href="#">Eartlings</a></li>
+        <li><a routerLink="/gallery/streetfood-details" href="#">Streetfood</a></li>
+      </ul>
+
+    </li>
+    <li><a class="navLink" routerLink="/">Details</a></li>
+    <li><a class="navLink" (click)="bottomPage()">Hire Me</a>
+
+    </li>
+    <div class="animation start-home"></div>
+  </ul>
 </nav>
