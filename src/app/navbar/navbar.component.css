@@ -1,6 +1,7 @@
 
 .primaryNav {
     font-family: 'EB Garamond', serif;
+    font-weight: 900;
     position: fixed;
     top: 0;
     width: 100%;
@@ -9,7 +10,7 @@
     backdrop-filter: blur(1rem);
     border-radius: 8px;
     font-size: 0;
-    z-index: 9999;
+    z-index: 1000;
   }
 
   .primaryNav a {
@@ -29,7 +30,7 @@
     position: relative;
    
   }
-
+  @media (min-width: 768px){
   .primaryNav .animation {
     position: absolute;
     height: 100%;
@@ -108,18 +109,11 @@
 .start-home{
   margin-left: 30px;
 }
-
+}
 .flex{
   display: flex;
 }
-.dropdown {
-  height: 0;
-  overflow: hidden;
-  transition: height ease 0.4s;
-  z-index: 9999;
-  background-color: hsla(0 0% 0%/ 0.8);
-  
-}
+
 li:hover .dropdown, li:focus .dropdown {
   height: 300px;
   
@@ -140,8 +134,134 @@ li:hover .dropdown, li:focus .dropdown {
   position: absolute;
   right: -15px;
   box-shadow: 0 0.3rem 1rem hsla(0 0% 100%/ 0.5);
-  z-index: 99;
   min-width: 8rem;
   padding: 0;
-  border-radius: 1rem 
+  border-radius: 1rem ;
+  height: 0;
+  overflow: hidden;
+  transition: height ease 0.4s;
+  z-index: 1100;
+  background-color: hsla(0 0% 0%/ 0.8);
+
+}
+ 
+@media (max-width: 768px) {
+  .primaryNav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .primaryNav {
+    height: 100%;
+    width: 40vw;
+    margin-left: -320px;
+    transition: all 0.5s ease-out;
+    background-color: hsla(0 0% 0%/ 0.4);
+    backdrop-filter: blur(1rem);
+   
+  }
+  .primaryNav ul>li>.navLink{
+    width: 100%;
+    text-align: center;
+    display: block;
+    
+  }
+  .primaryNav>ul>li{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-block: 1rem;
+  }
+  .primaryNav .animation {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    top: 5px;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+  }
+  .primaryNav>ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .primaryNav .start-home, li:nth-child(1).active~.animation {
+    width: 100%;
+    margin-left: 0 ;
+    top: 0;
+    left: 0;
+    background-color: #1abc9c;
+  }
+  .primaryNav .start-home, li:nth-child(2).active~.animation {
+    width: 100%;
+
+    top:80px;
+    background-color: #e74c3c;
+  }
+  .primaryNav .start-gallery, li:nth-child(3).active~.animation {
+    top: 160px;
+    background-color: #3498db;
+  }
+  .primaryNav .start-details, li:nth-child(4).active~.animation {
+    top: 240px;
+    background-color: #9b59b6;
+  }
+  .primaryNav .start-contact, li:nth-child(5).active~.animation {
+    top: 320px;
+    background-color: #e67e22;
+  }
+
+  .primaryNav .start-home, li:nth-child(1):hover~.animation {
+    width: 100%;
+    margin-left: 0 ;
+    top: 0;
+    left: 0;
+    background-color: #1abc9c;
+  }
+  .primaryNav .start-home, li:nth-child(2):hover~.animation {
+    width: 100%;
+
+    top:80px;
+    background-color: #e74c3c;
+  }
+  .primaryNav .start-gallery, li:nth-child(3):hover~.animation {
+    top: 160px;
+    background-color: #3498db;
+  }
+  .primaryNav .start-details, li:nth-child(4):hover~.animation {
+    top: 240px;
+    background-color: #9b59b6;
+  }
+  .primaryNav .start-contact, li:nth-child(5):hover~.animation {
+    top: 320px;
+    background-color: #e67e22;
+  }
+  .menu-icon {
+    display: block;
+    position: fixed;
+    width: 3rem;
+    aspect-ratio: 1;
+    top: 0.3rem;
+    left: 0.3rem;
+    z-index: 9999;
+    background-color: transparent;
+    font-size: 3rem;
+    background: url(../../assets/images/menu-white.png);
+    border: none;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.primaryNav[data-visible="true"] {
+
+  margin-left: 0;
+}
+
+.menu-icon[aria-expanded="true"] {
+  background: url(../../assets/images/close-white.png);
+}
+
+
+  
 }
