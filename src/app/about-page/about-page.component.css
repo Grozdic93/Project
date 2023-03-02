@@ -20,18 +20,16 @@ input.ng-valid.ng-touched{
     
 }
 #text1{
-  font-size: 1.5rem;
   width: auto;
 }
 #Bio{
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: 'EB Garamond', serif;
 }
 h5{
   display: flex;
   color: white;
   margin-right: 6rem;
-  font-size: 12px;
   font-family: 'Libre Baskerville', serif; 
 }
 #img1{
@@ -55,10 +53,10 @@ h1{
 .background {
     margin: 0px;
     display: flex;
-    min-height: 70vh;
+    min-height: 55vh;
   }
   .container {
-    flex: 0 1 800px;
+    flex: 0 1 900px;
     margin: auto;
     
   }
@@ -124,7 +122,7 @@ h1{
     background: none;
     border: none;
     border-bottom: 1px solid #666;
-    color: #ddd;
+    color: #e3d7d7;
     font-size: 14px;
     outline: none;
     transition: border-color .2s;
@@ -150,5 +148,87 @@ h1{
   .app-form-button:hover {
     color: #b9134f;
   }
-  
- 
+  /* --------------------------------------------------------------------------------------------------------------------- */
+  @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+
+.profile-card {
+    width: 200px;
+    height: 200px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+}
+
+.profile-card:hover {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    height: 400px;
+}
+
+.profile-card img {
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+    z-index: 10;
+}
+
+.profile-card:hover img {
+    transform: translateY(-60px);
+}
+
+img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+}
+
+.profile-card:hover img {
+    border-radius: 10px;
+}
+
+.caption {
+    text-align: center;
+    transform: translateY(-70px);
+    opacity: 0;
+    transition: .6s;
+}
+
+.profile-card:hover .caption {
+    opacity: 1;
+}
+
+.caption h3 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.caption p {
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: -25px;
+    font-size: 15px;
+    color: #0c52a1;
+    
+}
+
+.social-links {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: relative;
+    top: -35px;
+}
+
+@media only screen and (max-width: 700px) {
+    .profile-card {
+        margin-top: 45px;
+    }
+
+}
