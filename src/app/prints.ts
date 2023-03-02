@@ -2,7 +2,7 @@ export const prints = [
    
 
     {   name: "Pink Perfection",
-        description: "Flamingo, the Salar de Atacama",
+        description: "Flamingo in the Salar de Atacama",
         price: 500,
         image: "https://images.unsplash.com/photo-1629394661462-13ea8fe156ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
         size: "84 x 118 cm",
@@ -22,7 +22,7 @@ export const prints = [
     },
     {
         name: "Break",
-        description: "Bedouin (desert dwellers) taking a rest on the outskirts of the Sahara desert",
+        description: "Bedouin taking a rest on the outskirts of the Sahara desert",
         price: 600,
         image: "https://images.unsplash.com/photo-1592172578991-51bac865e437?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         size:"84 x 118 cm",
@@ -42,7 +42,7 @@ export const prints = [
     },
 {
         name: "Twilight",
-        description: "Sunset in the Chihuhuan desert",
+        description: "Sunset in the Chihuahuan desert",
         price: 300,
         image: "https://images.unsplash.com/photo-1559666126-84f389727b9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1177&q=80",
         size:"70 x 100 cm",

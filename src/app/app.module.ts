@@ -19,6 +19,7 @@ import { SliderComponent } from './slider/slider.component';
 import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
 import { CartComponent } from './cart/cart.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HeroCartComponent } from './hero-cart/hero-cart.component';
 
 
 
@@ -40,7 +41,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     GalleryComponent,
     HeroGalleryComponent,
     SliderComponent,
-    CartComponent
+    CartComponent,
+    HeroCartComponent
   ],
   imports: [
     BrowserModule,

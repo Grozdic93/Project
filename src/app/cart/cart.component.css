@@ -4,36 +4,63 @@
     color: black;
     font-size: 3rem;
     font-weight: bold;
-    margin-left: 5rem;
+    margin-left: 1rem;
 }
 
-
-/* delete */
-
-
-/* .header h1 {
+.summary {
     text-align: left;
-    font-family: 'Great Vibes', cursive;
+    font-family: 'EB Garamond', serif;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 10rem;
+}
+
+.total1 {
+    text-align: left;
+    margin-left: 10rem;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1rem;
+}
+
+.total2 {
+    text-align: left;
+    margin-left: 10rem;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+}
+
+.order h1 {
+    text-align: left;
+    font-family: 'EB Garamond', serif;
     color: black;
     font-size: 3rem;
     font-weight: bold;
-    margin-left: 0rem;
-} */
-
-
-/* .cart {
-    margin-bottom: 5rem;
-} */
-
-.total {
-    font-family: 'Libre Baskerville', serif;
-    text-align: left;
-    margin-left: 5rem;
 }
 
-p {
+.order h5 {
+    text-align: left;
+    font-family: 'EB Garamond', serif;
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.order2 {
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+}
+
+.total3 {
     font-family: 'Libre Baskerville', serif;
-    font-size: 0.9rem;
+}
+
+.label {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.input {
+    font-family: 'Libre Baskerville', serif;
 }
 
 .box {
@@ -50,6 +77,7 @@ select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
 }
 
 input[type=date],
@@ -61,6 +89,7 @@ select {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    font-family: 'Libre Baskerville', serif;
 }
 
 input[type=submit] {
@@ -72,10 +101,11 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'Libre Baskerville', serif;
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: purple;
 }
 
 .orderForm {
