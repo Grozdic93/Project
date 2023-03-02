@@ -6,7 +6,7 @@
 .parallax {
     background-image: url("https://images.unsplash.com/photo-1559666126-84f389727b9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1177&q=80");
     /* Set a specific height */
-    height: 100vh;
+    height: 50vh;
     /* width: 100%; */
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -58,7 +58,7 @@
     background-attachment: fixed;
     background-position-y: cover;
     background-size: cover;
-    height: 100vh;
+    height: 50vh;
 }
 
 .bar-2 h2 {
