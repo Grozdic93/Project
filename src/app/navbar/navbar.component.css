@@ -9,10 +9,17 @@
     width: 100%;
     height: 50px;
     background-color: hsla(0 0% 100%/ 0.2);
-    backdrop-filter: blur(1rem);
+
     border-radius: 8px;
     font-size: 0;
     z-index: 1000;
+  }
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .primaryNav {
+  
+      -webkit-backdrop-filter: blur(1rem);
+      backdrop-filter: blur(1rem);
+    }
   }
 
   .primaryNav a {
@@ -158,8 +165,14 @@ li:hover .dropdown, li:focus .dropdown {
     margin-left: -320px;
     transition: all 0.5s ease-out;
     background-color: hsla(0 0% 0%/ 0.4);
-    backdrop-filter: blur(1rem);
+
    
+  }
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .primaryNav {
+      -webkit-backdrop-filter: blur(1rem);
+      backdrop-filter: blur(1rem);
+    }
   }
   .primaryNav ul>li>.navLink{
     width: 100%;
