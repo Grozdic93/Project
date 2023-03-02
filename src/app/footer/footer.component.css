@@ -43,7 +43,7 @@ footer ul li a {
 	color: #363833;
 	font-family:  'Rampart One', cursive;
 	font-weight: 900;
-	font-size: clamp( 3em, 10vw, 10rem);
+	font-size: clamp( 1.8em, 6vw, 7rem);
 	grid-area: overlap;
 	letter-spacing: 1px;
 	-webkit-text-stroke: 4px transparent;
