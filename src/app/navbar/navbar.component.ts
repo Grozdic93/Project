@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-
+import { ViewportScroller } from '@angular/common';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -9,11 +9,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class NavbarComponent implements OnInit {
 
   constructor(private route: ActivatedRoute,
-    private router: Router) { }
+    private router: Router, private scroller: ViewportScroller) { }
 
   bottomPage(){
     this.router.navigate(['/about'], { relativeTo: this.route });
-    setTimeout(()=>{window.scrollTo(0,document.body.scrollHeight);}, 500);
+    setTimeout(()=>{this.scroller.scrollToAnchor("myAnchor")}, 500);
     
 
   }
